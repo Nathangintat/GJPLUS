@@ -6,11 +6,11 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerControl : MonoBehaviour
 {
-    [SerializeField] private float horizontalSpeed = 2f;
-    [SerializeField] private float verticalSpeed = 1f;
+    [SerializeField] private float movementSpeed = 4f;
+    [SerializeField] private float verticalSpeedModifier = 2f;
     private PlayerInpu input;
     private Vector2 direction;
-    [SerializeField] Rigidbody2D rb;
+    private Rigidbody2D rb;
 
     private void Awake()
     {
@@ -34,7 +34,7 @@ public class PlayerControl : MonoBehaviour
         direction = input.Player.Move.ReadValue<Vector2>().normalized;
         if (direction.magnitude != 0)
         {
-            rb.velocity = new Vector2(direction.x * horizontalSpeed, direction.y * verticalSpeed);
+            rb.velocity = new Vector2(direction.x * movementSpeed, (direction.y * movementSpeed) / verticalSpeedModifier);
         }
         else
         {
