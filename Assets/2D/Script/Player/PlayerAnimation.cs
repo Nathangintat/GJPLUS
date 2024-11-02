@@ -16,7 +16,7 @@ public class PlayerAnimation : MonoBehaviour
     }
     private void Update() {
         direction = rb.velocity;
-        if(direction.x != 0) 
+        if(direction.x > 1 || direction.x < -1) 
         {
             if(direction.x > 0) sr.flipX = false;
             else sr.flipX = true;
