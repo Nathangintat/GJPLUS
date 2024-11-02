@@ -7,7 +7,7 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     [SerializeField] private float movementSpeed = 4f;
-    [SerializeField] private float verticalSpeedModifier = 2f;
+    [SerializeField] private float verticalSpeedModifier;
     private PlayerInpu input;
     private Vector2 direction;
     private Rigidbody2D rb;
@@ -32,8 +32,11 @@ public class PlayerControl : MonoBehaviour
     void Update()
     {
         direction = input.Player.Move.ReadValue<Vector2>().normalized;
+
+        
         if (direction.magnitude != 0)
         {
+            Debug.Log(direction);
             rb.velocity = new Vector2(direction.x * movementSpeed, (direction.y * movementSpeed) / verticalSpeedModifier);
         }
         else
