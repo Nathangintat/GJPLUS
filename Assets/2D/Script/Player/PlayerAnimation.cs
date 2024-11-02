@@ -18,8 +18,8 @@ public class PlayerAnimation : MonoBehaviour
         direction = rb.velocity;
         if(direction.x != 0) 
         {
-            if(direction.x > 0) sr.FlipX = true;
-            else sr.FlipX = false;
+            if(direction.x > 0) sr.flipX = false;
+            else sr.flipX = true;
             animator.Play("Move Sideways");
         }
         else if (direction.y > 0) animator.Play("Move Up");
