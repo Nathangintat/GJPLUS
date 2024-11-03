@@ -9,6 +9,7 @@ public class MonsterKillLogic : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             collision.GetComponent<PlayerDeath>().Die();
+            collision.attachedRigidbody.simulated = false;
         }
     }
 }
