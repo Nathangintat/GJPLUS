@@ -543,9 +543,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 120908a4e0d7491449b4a36f5c43e4c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _screamSFX: {fileID: 0}
-  _monsterSFX: {fileID: 0}
-  _altMonsterSFX: {fileID: 0}
+  _screamSFX: {fileID: 8300000, guid: cb51a50a7d9d220409668a393fb8e765, type: 3}
+  _monsterSFX: {fileID: 8300000, guid: d0e804f6c5290ed4cbe9b948a2c2db26, type: 3}
+  _altMonsterSFX: {fileID: 8300000, guid: 9d1a0e2c6cde1744aa0e410827c96e03, type: 3}
 --- !u!4 &890663970
 Transform:
   m_ObjectHideFlags: 0
@@ -19053,7 +19053,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.125
+  orthographic size: 4.7109375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -19468,6 +19468,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2562061161780846976, guid: 6289b5607eed38e4bb1374ec0d36d6e1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7906078740564082178, guid: 6289b5607eed38e4bb1374ec0d36d6e1,
         type: 3}

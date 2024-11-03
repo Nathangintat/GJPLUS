@@ -130,6 +130,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1676016113}
     m_Modifications:
+    - target: {fileID: 3541874270620683601, guid: 8762a88c9ef669c44ba8db4fb76585b7,
+        type: 3}
+      propertyPath: houseSceneId
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6223884053540982345, guid: 8762a88c9ef669c44ba8db4fb76585b7,
         type: 3}
       propertyPath: m_Name
@@ -2584,6 +2589,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1676016113}
     m_Modifications:
+    - target: {fileID: 3541874270620683601, guid: 8762a88c9ef669c44ba8db4fb76585b7,
+        type: 3}
+      propertyPath: houseSceneId
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6223884053540982345, guid: 8762a88c9ef669c44ba8db4fb76585b7,
         type: 3}
       propertyPath: m_Name
@@ -2658,6 +2668,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1676016113}
     m_Modifications:
+    - target: {fileID: 3541874270620683601, guid: 8762a88c9ef669c44ba8db4fb76585b7,
+        type: 3}
+      propertyPath: houseSceneId
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6223884053540982345, guid: 8762a88c9ef669c44ba8db4fb76585b7,
         type: 3}
       propertyPath: m_Name
@@ -2882,6 +2897,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1676016113}
     m_Modifications:
+    - target: {fileID: 3541874270620683601, guid: 8762a88c9ef669c44ba8db4fb76585b7,
+        type: 3}
+      propertyPath: houseSceneId
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6223884053540982345, guid: 8762a88c9ef669c44ba8db4fb76585b7,
         type: 3}
       propertyPath: m_Name
@@ -2956,6 +2976,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1676016113}
     m_Modifications:
+    - target: {fileID: 3541874270620683601, guid: 8762a88c9ef669c44ba8db4fb76585b7,
+        type: 3}
+      propertyPath: houseSceneId
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6223884053540982345, guid: 8762a88c9ef669c44ba8db4fb76585b7,
         type: 3}
       propertyPath: m_Name
@@ -6604,6 +6629,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1676016113}
     m_Modifications:
+    - target: {fileID: 3541874270620683601, guid: 8762a88c9ef669c44ba8db4fb76585b7,
+        type: 3}
+      propertyPath: houseSceneId
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6223884053540982345, guid: 8762a88c9ef669c44ba8db4fb76585b7,
         type: 3}
       propertyPath: m_Name
@@ -6678,6 +6708,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1676016113}
     m_Modifications:
+    - target: {fileID: 3541874270620683601, guid: 8762a88c9ef669c44ba8db4fb76585b7,
+        type: 3}
+      propertyPath: houseSceneId
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6223884053540982345, guid: 8762a88c9ef669c44ba8db4fb76585b7,
         type: 3}
       propertyPath: m_Name
@@ -7017,7 +7052,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.75
+  orthographic size: 4.125
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7042,7 +7077,7 @@ Transform:
   m_GameObject: {fileID: 1582287856}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.000011867947, y: -0.25, z: -10}
+  m_LocalPosition: {x: 0.000011867947, y: 0.125, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7188,6 +7223,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1676016113}
     m_Modifications:
+    - target: {fileID: 3541874270620683601, guid: 8762a88c9ef669c44ba8db4fb76585b7,
+        type: 3}
+      propertyPath: houseSceneId
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6223884053540982345, guid: 8762a88c9ef669c44ba8db4fb76585b7,
         type: 3}
       propertyPath: m_Name
@@ -8126,6 +8166,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1676016113}
     m_Modifications:
+    - target: {fileID: 3541874270620683601, guid: 8762a88c9ef669c44ba8db4fb76585b7,
+        type: 3}
+      propertyPath: houseSceneId
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6223884053540982345, guid: 8762a88c9ef669c44ba8db4fb76585b7,
         type: 3}
       propertyPath: m_Name
@@ -8288,6 +8333,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1676016113}
     m_Modifications:
+    - target: {fileID: 3541874270620683601, guid: 8762a88c9ef669c44ba8db4fb76585b7,
+        type: 3}
+      propertyPath: houseSceneId
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6223884053540982345, guid: 8762a88c9ef669c44ba8db4fb76585b7,
         type: 3}
       propertyPath: m_Name
