@@ -116,9 +116,9 @@ TextureImporter:
         x: 79
         y: 12
         width: 162
-        height: 148
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -140,6 +140,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Mansion_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 76
+        width: 162
+        height: 84
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085d366ba43828d48a2f3bd2312bf16d
+      internalID: 1566793713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -152,6 +173,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Mansion_0: 495665807
+      Mansion_1: 1566793713
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

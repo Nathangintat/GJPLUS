@@ -12,9 +12,9 @@ public class PlayerDeath : MonoBehaviour
             return;
         }
         GameSystem2D.Instance.deathCount++;
-
+        Debug.Log("Die");
     }
     public void FinalDeath(){
-        
+        Debug.Log("Final Death");
     }
 }
