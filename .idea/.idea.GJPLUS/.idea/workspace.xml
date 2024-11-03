@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3c0ded0-9030-4449-af87-f66d6ca1f2eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scene3D/NavMesh-NavMeshAgent.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scene3D/NavMesh-NavMeshAgent.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GJPLUS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GJPLUS/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Animations/Door.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Animations/Door.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Scripts/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Scripts/Door.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Small Doorway with Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Small Doorway with Door.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +20,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/3D/Scripts/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/3D/Scripts/EnemyState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/3D/Scripts/RoamingEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/30c530d7db63441097c8dced8b6e46f0176400/7c/877ba13f/MonoBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -40,7 +34,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Nathan&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
