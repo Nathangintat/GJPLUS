@@ -8,14 +8,15 @@ using UnityEngine.SceneManagement;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private float triggerDistance = 5f; 
+    [SerializeField] private float returnDistance = 10f;
     
     private float distanceToTarget = Mathf.Infinity; 
-    NavMeshAgent agent;
-    bool isProvoked = false;
     
+    NavMeshAgent agent;
     PlayerSession playerSession;
     FirstPersonController player;
     
+    public EnemyState currentState = EnemyState.Patrolling;
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -36,16 +37,37 @@ public class Enemy : MonoBehaviour
     {
         distanceToTarget = Vector3.Distance(player.transform.position, transform.position);
         
-        if (isProvoked)
+        switch (currentState)
         {
-            EnemyTrigger();
+            case EnemyState.Patrolling:
+                Patrolling();
+                if (distanceToTarget <= triggerDistance)
+                {
+                    currentState = EnemyState.Chasing;
+                }
+                break;
+
+            case EnemyState.Chasing:
+                EnemyTrigger();
+                if (distanceToTarget > returnDistance)
+                {
+                    currentState = EnemyState.Returning;
+                }
+                break;
+
+            case EnemyState.Returning:
+                returnToPatrolling();
+                if (distanceToTarget <= triggerDistance)
+                {
+                    currentState = EnemyState.Chasing;
+                }
+                break;
         }
-        else if (distanceToTarget <= triggerDistance)
-        {
-            isProvoked = true;
-            //Todo RAGE MODE
-            triggerDistance = 5f;
-        }
+    }
+    
+    private void Patrolling()
+    {
+        agent.ResetPath();
     }
 
     private void EnemyTrigger()
@@ -64,6 +86,12 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    private void returnToPatrolling()
+    {
+        agent.ResetPath();
+        currentState = EnemyState.Patrolling;
+    }
+
     private void AttackPlayer()
     {
         if (!playerSession.GetIsDead())
@@ -71,12 +99,16 @@ public class Enemy : MonoBehaviour
             //TODO
             //jumpscare
             //sfx
+            Debug.Log("Attacking");
             playerSession.ProcessPlayerDeath();
-            Debug.Log(name + "is attacking" + player.name);
             playerSession.SetIsDead(true);
         }
     }
-    
+
+    public bool IsChasing()
+    {
+        return currentState == EnemyState.Chasing;
+    }
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
