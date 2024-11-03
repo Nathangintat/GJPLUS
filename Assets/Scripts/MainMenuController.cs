@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuController : MonoBehaviour
 {
     public void PlayButton () {
-        SceneManager.LoadScene("Scene3D");
+        SceneManager.LoadScene(1);
     }
 
     public void QuitButton () {

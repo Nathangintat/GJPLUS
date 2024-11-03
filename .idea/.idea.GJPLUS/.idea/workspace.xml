@@ -6,23 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d3c0ded0-9030-4449-af87-f66d6ca1f2eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GJPLUS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GJPLUS/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2D/Animations/Enemy/Monster_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2D/Animations/Enemy/Monster_0.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Animations/CloseDoor.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Animations/CloseDoor.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Animations/Door.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Animations/Door.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Animations/Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Animations/Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Animations/OpenDoor.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Animations/OpenDoor.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/AssetsPack/monster_scavenger/animation/monster_scavenger.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/AssetsPack/monster_scavenger/animation/monster_scavenger.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/AssetsPack/monster_scavenger/monster_scavenger Animator Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/AssetsPack/monster_scavenger/monster_scavenger Animator Controller.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Scripts/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Scripts/PlayerSession.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Scripts/PlayerSession.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Scripts/RoamingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Scripts/RoamingEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Prefabs/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene3D.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene3D.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,18 +36,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Nathan&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.50f1/Unity.app/Contents/MacOS/Unity" />
@@ -108,6 +96,7 @@
       <updated>1730513040307</updated>
       <workItem from="1730513042019" duration="673000" />
       <workItem from="1730529389944" duration="2772000" />
+      <workItem from="1730650631617" duration="649000" />
     </task>
     <servers />
   </component>
