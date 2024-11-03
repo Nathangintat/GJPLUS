@@ -11,11 +11,13 @@ public class PlayerControl : MonoBehaviour
     private PlayerInpu input;
     private Vector2 direction;
     private Rigidbody2D rb;
+    private PlayerAnimation playerAnimation;
 
     private void Awake()
     {
         input = new PlayerInpu();
         rb = GetComponent<Rigidbody2D>();
+        playerAnimation = GetComponent<PlayerAnimation>();
     }
 
     private void OnEnable()
@@ -28,16 +30,14 @@ public class PlayerControl : MonoBehaviour
         input.Disable();
     }
 
-    // Update is called once per frame
     void Update()
     {
         direction = input.Player.Move.ReadValue<Vector2>().normalized;
-
-        
+        playerAnimation.Walk(direction);
         if (direction.magnitude != 0)
         {
-            Debug.Log(direction);
             rb.velocity = new Vector2(direction.x * movementSpeed, (direction.y * movementSpeed) / verticalSpeedModifier);
+            
         }
         else
         {
