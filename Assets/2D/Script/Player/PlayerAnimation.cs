@@ -7,16 +7,13 @@ public class PlayerAnimation : MonoBehaviour
 {
     private Animator animator;
     private SpriteRenderer sr;
-    private Rigidbody2D rb;
-    private Vector2 direction;
     private void Awake() {
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
-        rb = GetComponent<Rigidbody2D>();
     }
-    private void Update() {
-        direction = rb.velocity;
-        if(direction.x > 1 || direction.x < -1) 
+    public void Walk(Vector2 direction) {
+        Debug.Log(direction);
+        if(direction.x != 0) 
         {
             if(direction.x > 0) sr.flipX = false;
             else sr.flipX = true;
@@ -26,5 +23,4 @@ public class PlayerAnimation : MonoBehaviour
         else if (direction.y < 0) animator.Play("Move Down");
         else animator.Play("Idle");
     }
-    
 }
