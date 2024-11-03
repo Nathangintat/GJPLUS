@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 8324646372364106178}
   - component: {fileID: 2412001012833240161}
   - component: {fileID: 8205231913396972237}
+  - component: {fileID: 8518993605284914793}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -282,3 +283,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerDistance: 5
+  returnDistance: 10
+  currentState: 0
+--- !u!114 &8518993605284914793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3900342693601445829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614cfc34914aa44e9a0e2ec873504f6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoint: {fileID: 0}
+  speed: 1
+  distanceThreshold: 2
+  rotateSpeed: 1
