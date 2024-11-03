@@ -9,7 +9,7 @@ using UnityEngine;
 public class RoamingEnemy : MonoBehaviour
 {
     [SerializeField] Waypoint waypoint;
-    [SerializeField] [Range(0f, 5f)] float speed = 1f;
+    [SerializeField] [Range(0f, 50f)] float speed = 1f;
     [SerializeField] float distanceThreshold = 2f;
     [SerializeField] private float rotateSpeed = 1f;
 

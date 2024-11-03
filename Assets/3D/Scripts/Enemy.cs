@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private float triggerDistance = 5f; 
     [SerializeField] private float returnDistance = 10f;
+    [SerializeField] GameObject DeadImage;
     
     private float distanceToTarget = Mathf.Infinity; 
     
@@ -68,6 +69,7 @@ public class Enemy : MonoBehaviour
     private void Patrolling()
     {
         agent.ResetPath();
+        GetComponentInChildren<Animator>().SetBool("Patrolling", true);
     }
 
     private void EnemyTrigger()
@@ -75,6 +77,8 @@ public class Enemy : MonoBehaviour
         {
             if (distanceToTarget >= agent.stoppingDistance)
             {
+                GetComponentInChildren<Animator>().SetBool("Patrolling", false);
+                GetComponentInChildren<Animator>().SetBool("Rage", true);
                 transform.LookAt(player.transform.position);
                 agent.SetDestination(player.transform.position);
             }
@@ -82,12 +86,15 @@ public class Enemy : MonoBehaviour
             else if(distanceToTarget <= agent.stoppingDistance)
             {
                 AttackPlayer();
+                DeadImage.SetActive(true);
             }
         }
     }
 
     private void returnToPatrolling()
     {
+        GetComponentInChildren<Animator>().SetBool("Rage", false);
+        GetComponentInChildren<Animator>().SetBool("Patrolling", true);
         agent.ResetPath();
         currentState = EnemyState.Patrolling;
     }
@@ -98,8 +105,7 @@ public class Enemy : MonoBehaviour
         {
             //TODO
             //jumpscare
-            //sfx
-            Debug.Log("Attacking");
+            GetComponentInChildren<Animator>().SetTrigger("Attacking");
             playerSession.ProcessPlayerDeath();
             playerSession.SetIsDead(true);
         }
