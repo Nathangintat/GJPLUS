@@ -1,20 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
-    [SerializeField] private readonly int lives = 3;
-    
+    [SerializeField] private GameObject DeathScreen;
     public void Die(){
-        if(GameSystem2D.Instance.deathCount >= lives) {
-            FinalDeath();
-            return;
-        }
-        GameSystem2D.Instance.deathCount++;
-
-    }
-    public void FinalDeath(){
-        
+        DeathScreen.SetActive(true);
+        gameObject.SetActive(false);
+        SceneManager.LoadScene(1);
+        GameSystem2D.Instance.MonsterSFX();
+        GameSystem2D.Instance.ScreamSFX();
     }
 }
