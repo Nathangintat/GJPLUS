@@ -222,7 +222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BoundingShape2D: {fileID: 1030090488}
   m_Damping: 0.5
-  m_MaxWindowSize: -1
+  m_MaxWindowSize: 0
 --- !u!4 &144016065 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2401700662442421931, guid: 6289b5607eed38e4bb1374ec0d36d6e1,
@@ -457,9 +457,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 120908a4e0d7491449b4a36f5c43e4c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _screamSFX: {fileID: 0}
-  _monsterSFX: {fileID: 0}
-  _altMonsterSFX: {fileID: 0}
+  _screamSFX: {fileID: 8300000, guid: cb51a50a7d9d220409668a393fb8e765, type: 3}
+  _monsterSFX: {fileID: 8300000, guid: d0e804f6c5290ed4cbe9b948a2c2db26, type: 3}
+  _altMonsterSFX: {fileID: 8300000, guid: 9d1a0e2c6cde1744aa0e410827c96e03, type: 3}
 --- !u!4 &890663970
 Transform:
   m_ObjectHideFlags: 0
@@ -487,7 +487,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -18526,7 +18526,7 @@ Transform:
   m_GameObject: {fileID: 1259743265}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5, y: -1.503172, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 20, y: 11.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18859,7 +18859,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.125
+  orthographic size: 5.625
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -19055,6 +19055,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8238597776014609411, guid: 8762a88c9ef669c44ba8db4fb76585b7,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

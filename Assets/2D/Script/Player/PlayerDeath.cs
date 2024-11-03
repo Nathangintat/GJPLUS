@@ -7,10 +7,14 @@ public class PlayerDeath : MonoBehaviour
 {
     [SerializeField] private GameObject DeathScreen;
     public void Die(){
-        DeathScreen.SetActive(true);
-        gameObject.SetActive(false);
-        SceneManager.LoadScene(1);
         GameSystem2D.Instance.MonsterSFX();
         GameSystem2D.Instance.ScreamSFX();
+        DeathScreen.SetActive(true);
+        StartCoroutine(DieTimer());
+    }
+    IEnumerator DieTimer()
+    {
+        yield return new WaitForSeconds(4);
+        SceneManager.LoadScene(1);
     }
 }
