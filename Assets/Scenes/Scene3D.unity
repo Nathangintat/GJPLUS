@@ -14111,6 +14111,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7862015198407402744, guid: 8677d901f3e874332ad7d0640858a36f,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerSession
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14257,6 +14262,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8670336059736528560, guid: 015add4a33bad4a58a247935a5d52b16,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14354,6 +14364,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976781369896756393, guid: 0be856685d15b4841ba19fe190120a59,
+        type: 3}
+      propertyPath: m_Name
+      value: Waypoints
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -14495,7 +14510,7 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 460564297}
   - {fileID: 510767992}
-  - {fileID: 547488735}
+  - {fileID: 6917575146683178547}
   - {fileID: 5642413873405447857}
   - {fileID: 435249961}
   - {fileID: 559115689}
