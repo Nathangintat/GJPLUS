@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Follow: {fileID: 144016065}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 15.760054
+    OrthographicSize: 10
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -274,7 +274,7 @@ Transform:
   m_GameObject: {fileID: 103149252}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6483, y: 1.11, z: -10}
+  m_LocalPosition: {x: -0.000000059604645, y: 0.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3695,8 +3695,8 @@ MonoBehaviour:
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
+  m_DeadZoneWidth: 0.3
+  m_DeadZoneHeight: 0.3
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.8
@@ -3838,7 +3838,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 16.875
+  orthographic size: 8.4375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3863,7 +3863,7 @@ Transform:
   m_GameObject: {fileID: 1494387618}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6483, y: 1.11, z: -10}
+  m_LocalPosition: {x: -0.000000059604645, y: 0.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3927,10 +3927,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ComponentVersion: 1
   m_AssetsPPU: 32
-  m_RefResolutionX: 1920
-  m_RefResolutionY: 1080
+  m_RefResolutionX: 960
+  m_RefResolutionY: 540
   m_CropFrame: 0
-  m_GridSnapping: 1
+  m_GridSnapping: 2
   m_FilterMode: 0
   m_UpscaleRT: 0
   m_PixelSnapping: 0
@@ -4211,12 +4211,12 @@ PrefabInstance:
     - target: {fileID: 2401700662442421931, guid: 6289b5607eed38e4bb1374ec0d36d6e1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.6483
+      value: -0.000000059604645
       objectReference: {fileID: 0}
     - target: {fileID: 2401700662442421931, guid: 6289b5607eed38e4bb1374ec0d36d6e1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.11
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2401700662442421931, guid: 6289b5607eed38e4bb1374ec0d36d6e1,
         type: 3}
@@ -4257,6 +4257,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7486561850689088766, guid: 6289b5607eed38e4bb1374ec0d36d6e1,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
