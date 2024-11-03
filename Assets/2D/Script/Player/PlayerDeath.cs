@@ -10,5 +10,7 @@ public class PlayerDeath : MonoBehaviour
         DeathScreen.SetActive(true);
         gameObject.SetActive(false);
         SceneManager.LoadScene(1);
+        GameSystem2D.Instance.MonsterSFX();
+        GameSystem2D.Instance.ScreamSFX();
     }
 }
