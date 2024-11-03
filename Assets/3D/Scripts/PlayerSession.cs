@@ -57,9 +57,9 @@ public class PlayerSession : MonoBehaviour
     void TakeLife()
     {
         health--;
-        isDead = false;
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentScene);
+        isDead = false;
     }
 
     void ResetGameSession()
